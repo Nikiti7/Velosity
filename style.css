@@ -18,10 +18,10 @@ p {
 	color: #6A859C;
 	line-height: 1.8;
 }
-
-/* .hide {  позволяет убирать отображение секций
+/* позволяет убирать отображение секций */
+.hide {  
 	display: none !important;
-} */
+} 
 
 .title-wrapper {
 	margin-bottom: 60px;
@@ -117,6 +117,7 @@ p {
 /* ----------------- WELCOME -------------- */
 .welcome {
 	min-height: 600px;
+	height: 100vh;
 	padding: 195px 0;
 	
 	display: flex;
@@ -279,6 +280,19 @@ p {
 
 .tabs__nav button + button {
 	margin-left: 15px;
+}
+
+.tabs__item {
+	animation: fade 1s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.3;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .tabs__item img {
